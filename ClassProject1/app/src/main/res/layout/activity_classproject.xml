@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chiefLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:hint="Enter Name: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameId"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/parentLayout"
+        android:layout_below="@+id/nameId">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number Password"
+            android:id="@+id/numPwd"
+            android:layout_weight="1"
+            android:inputType="numberPassword"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Text Password"
+            android:id="@+id/txtPwd"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/parentLayout"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/submitBtn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/submitBtn"
+            android:text="+"
+            android:background="@color/colorTeal"
+            android:textColor="@color/colorWhite"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
